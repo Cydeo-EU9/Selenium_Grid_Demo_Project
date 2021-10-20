@@ -34,7 +34,9 @@ public class Driver {
             switch (browser) {
                 case "remote-chrome":
                     try {
-                        URL url = new URL("http://18.212.57.48:4444/wd/hub");
+                        // assign your grid server address
+                        String gridAddress = "35.170.57.13";
+                        URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
                         driver = new RemoteWebDriver(url, desiredCapabilities);
@@ -43,7 +45,7 @@ public class Driver {
                     }
                     break;
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.chromedriver().driverVersion("93.0.4577.63").setup();
                     driver = new ChromeDriver();
                     break;
                 case "chrome-headless":
