@@ -38,7 +38,6 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.0.2</version>
         </dependency>
-        
     </dependencies>
 
     <build>
@@ -46,46 +45,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-
                     <includes>
-                        <include>**/*CukesRunner.java</include>
+                        <include>**/*Runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
-            <!-- <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>4.4.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>cucumber-jvm-example</projectName>
-                            output directory for the generated report
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            optional, defaults to outputDirectory if not specified
-                            <inputDirectory>${project.build.directory}</inputDirectory>
-
-                            <jsonFiles>
-                                supports wildcard or name pattern
-                                <param>**/cucumber.json</param>
-                            </jsonFiles>
-                            <classificationFiles>
-                                supports wildcard or name pattern
-                                <param>sample.properties</param>
-                                <param>other.properties</param>
-                            </classificationFiles>
-                            <parallelTesting>false</parallelTesting>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin> -->
         </plugins>
     </build>
 
