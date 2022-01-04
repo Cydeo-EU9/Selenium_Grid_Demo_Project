@@ -17,13 +17,13 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.1.0</version>
+            <version>7.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.1.0</version>
+            <version>7.2.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -33,8 +33,6 @@
             <artifactId>selenium-java</artifactId>
             <version>4.1.1</version>
         </dependency>
-
-
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
