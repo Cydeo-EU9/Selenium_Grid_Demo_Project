@@ -46,7 +46,7 @@ public class StepDefs {
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/png", scenario.getName());
+            scenario.attach(screenshot, "image/png", scenario.getName());
         }
         Driver.closeDriver();
     }
