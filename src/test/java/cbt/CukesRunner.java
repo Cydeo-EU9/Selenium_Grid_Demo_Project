@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber/report.html",
                 "junit:target/junit/junit-report.xml",
                 "rerun:target/rerun.txt",},
-        features = "src/test/resources/cbt",
-        publish = true
+        features = "src/test/resources/cbt"
+       // publish = true
 )
 public class CukesRunner {}
