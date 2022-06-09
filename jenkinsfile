@@ -9,6 +9,7 @@ node {
         } else {
             bat "mvn clean test"
         }
+
     }
 
     stage('Generate report'){
