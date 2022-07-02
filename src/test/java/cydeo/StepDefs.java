@@ -1,4 +1,4 @@
-package cbt;
+package cydeo;
 
 import static org.junit.Assert.fail;
 
@@ -12,7 +12,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
